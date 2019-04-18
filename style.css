@@ -1,0 +1,171 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  background-color: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+    header ul li a {
+      margin: 0 5px; }
+    header ul li a {
+      text-decoration: none;
+      color: #fff; }
+    header ul li a:hover {
+      text-decoration: underline;
+      color: #646363; }
+
+#intro {
+  background-color: #333e6d;
+  overflow: hidden; }
+  #intro .wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); }
+  #intro .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 94.8vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: #fff; }
+    #intro .container .inner-text h1 {
+      font-size: 2rem;
+      margin-bottom: 5px; }
+    #intro .container .skills {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 1.2rem; }
+  #intro .about-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    color: #fff; }
+    #intro .about-me div:nth-child(odd) {
+      margin-top: 150px; }
+    #intro .about-me h2 {
+      font-size: 1.6rem; }
+
+#project {
+  height: 60vh; }
+  #project .wrapper {
+    background-color: #fff;
+    max-width: 1600px;
+    height: inherit;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    margin: auto; }
+    #project .wrapper .description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 200px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #project .wrapper .description a {
+        text-decoration: none;
+        color: #000;
+        font-size: 36px; }
+      #project .wrapper .description a:hover {
+        text-decoration: underline;
+        color: #f110d3; }
+      #project .wrapper .description hr {
+        color: #000;
+        width: 50%; }
+      #project .wrapper .description h3 {
+        margin: 0; }
+    #project .wrapper .content {
+      height: 90%;
+      position: relative; }
+      #project .wrapper .content img {
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        bottom: 0;
+        border-radius: 5px;
+        -webkit-box-shadow: 2px 3px 15px 2px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: 2px 3px 15px 2px rgba(0, 0, 0, 0.72);
+        box-shadow: 2px 3px 15px 2px rgba(0, 0, 0, 0.72); }
+
+.copyright {
+  background-color: #333;
+  color: #fff;
+  height: 100px;
+  padding: 10px 0;
+  text-align: center; }
+  .copyright div {
+    margin-top: 15px; }
+    .copyright div a {
+      text-decoration: none;
+      color: #fff; }
+    .copyright div a:hover {
+      color: #726b6b;
+      text-decoration: underline; }
+    .copyright div p {
+      margin: 0; }
+
+@media screen and (max-width: 800px) {
+  #intro .wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    #intro .wrapper .container {
+      margin-top: 100px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 7vh; }
+    #intro .wrapper .about-me {
+      text-align: center; }
+      #intro .wrapper .about-me div:nth-child(odd) {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #fff; }
+  #project {
+    height: 75vh; }
+    #project .wrapper {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; }
+      #project .wrapper .description {
+        height: 25vh;
+        margin-bottom: 0; }
+      #project .wrapper .content {
+        height: 50vh; } }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
