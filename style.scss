@@ -87,21 +87,20 @@ header {
 // project
 
 #project {
-    height: 60vh;
-
+    
     .wrapper {
         background-color: #fff;
         max-width: 1400px;
-        height: inherit;
         display: grid;
         grid-template-columns: 1fr 2fr;
         margin: auto;
+        padding: 2rem 2rem;
+        height: 60vh;
     
         
 
         .description {
             display: flex;
-            margin-bottom: 100px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -222,7 +221,6 @@ header {
             grid-template-columns: 1fr;
             
             .description {
-                height: 25vh;
                 padding-top: 10px;
                 margin-bottom: 0;
 
@@ -234,15 +232,21 @@ header {
             .content {
                 height: 50vh;
             }
-
             }
         }
     }
 
 
+    @media screen and (max-width: 568px) {
+
+        #project {
+            height: 85vh;
+        }
+    }
+
     // Landscape
 
-    @media screen and (max-height: 750px) {
+    @media screen and (max-height: 650px) {
 
         #intro {
 
@@ -271,13 +275,14 @@ header {
     
     
         #project {
-            height: 75vh;
+            height: 100vh;
     
             .wrapper {
                 grid-template-columns: 1fr;
+                max-width: 400px;
                 
                 .description {
-                    height: 25vh;
+            
                     padding-top: 20px;
                     padding-bottom: 20px;
                     margin-bottom: 0;
@@ -288,13 +293,19 @@ header {
                 }
     
                 .content {
-                    height: 42vh;
+                    height: 25vh;
                 }
-    
                 }
             }
         }
 
+        @media screen and (max-height: 320px) {
+            #project {
+                .description {
+                    height: 45vh;
+                }
+            }
+        }
 
 
 .clearfix::after {
