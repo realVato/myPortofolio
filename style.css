@@ -75,7 +75,7 @@ header {
   height: 60vh; }
   #project .wrapper {
     background-color: #fff;
-    max-width: 1600px;
+    max-width: 1400px;
     height: inherit;
     display: -ms-grid;
     display: grid;
@@ -86,7 +86,7 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -96,7 +96,9 @@ header {
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center;
+      padding: 0rem 2rem; }
       #project .wrapper .description a {
         text-decoration: none;
         color: #000;
