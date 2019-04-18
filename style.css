@@ -148,15 +148,17 @@ header {
 @media screen and (max-width: 800px) {
   #intro .wrapper {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    padding: 0 2rem; }
     #intro .wrapper .container {
       margin-top: 100px;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      height: 7vh; }
+      height: 25vh; }
     #intro .wrapper .about-me {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 50px; }
       #intro .wrapper .about-me div:nth-child(odd) {
         padding-bottom: 50px;
         border-bottom: 1px solid #fff; }
@@ -167,11 +169,44 @@ header {
       grid-template-columns: 1fr; }
       #project .wrapper .description {
         height: 25vh;
+        padding-top: 10px;
         margin-bottom: 0; }
         #project .wrapper .description .hide-on-small {
           display: none; }
       #project .wrapper .content {
         height: 50vh; } }
+
+@media screen and (max-height: 750px) {
+  #intro .wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0 2rem; }
+    #intro .wrapper .container {
+      margin-top: 100px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 25vh; }
+    #intro .wrapper .about-me {
+      text-align: center;
+      padding-bottom: 50px; }
+      #intro .wrapper .about-me div:nth-child(odd) {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #fff; }
+  #project {
+    height: 75vh; }
+    #project .wrapper {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; }
+      #project .wrapper .description {
+        height: 25vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0; }
+        #project .wrapper .description .hide-on-small {
+          display: none; }
+      #project .wrapper .content {
+        height: 42vh; } }
 
 .clearfix::after {
   content: "";

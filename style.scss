@@ -193,15 +193,18 @@ header {
 
         .wrapper {
             grid-template-columns: 1fr;
+            padding: 0 2rem;
 
             .container {
                 margin-top: 100px;
                 align-items: center;
-                height: 7vh;
+                height: 25vh;
             }
 
             .about-me {
                 text-align: center;
+
+                padding-bottom: 50px;
 
                 div:nth-child(odd) {
                     padding-bottom: 50px;
@@ -235,6 +238,63 @@ header {
             }
         }
     }
+
+
+    // Landscape
+
+    @media screen and (max-height: 750px) {
+
+        #intro {
+
+            .wrapper {
+                grid-template-columns: 1fr;
+                padding: 0 2rem;
+    
+                .container {
+                    margin-top: 100px;
+                    align-items: center;
+                    height: 25vh;
+                }
+    
+                .about-me {
+                    text-align: center;
+    
+                    padding-bottom: 50px;
+    
+                    div:nth-child(odd) {
+                        padding-bottom: 50px;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    
+    
+        #project {
+            height: 75vh;
+    
+            .wrapper {
+                grid-template-columns: 1fr;
+                
+                .description {
+                    height: 25vh;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 0;
+    
+                    .hide-on-small {
+                        display: none;
+                    }
+                }
+    
+                .content {
+                    height: 42vh;
+                }
+    
+                }
+            }
+        }
+
 
 
 .clearfix::after {
