@@ -185,6 +185,7 @@ header {
 
 @media screen and (max-width: 800px) {
 
+
     #intro {
 
         .wrapper {
@@ -217,6 +218,10 @@ header {
             .description {
                 height: 25vh;
                 margin-bottom: 0;
+
+                .hide-on-small {
+                    display: none;
+                }
             }
 
             .content {

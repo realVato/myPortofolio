@@ -166,6 +166,8 @@ header {
       #project .wrapper .description {
         height: 25vh;
         margin-bottom: 0; }
+        #project .wrapper .description .hide-on-small {
+          display: none; }
       #project .wrapper .content {
         height: 50vh; } }
 
